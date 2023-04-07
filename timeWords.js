@@ -85,6 +85,8 @@ const timeWords = (time) => {
         } 
         if (+timeArr[0] > 0 && +timeArr[1] > 1) {
             solutionArr.push(' pm')
+        } else if (+timeArr[0] === 2) {
+            solutionArr.push(' pm');
         } else {
             solutionArr.push(' am');
         }
